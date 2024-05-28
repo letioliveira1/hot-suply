@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="carrinho_compras.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Hot Suply</h1>
+                <div class="search-login">
+                    <input type="text" placeholder="Pesquisar...">
+                    <button><i class="fas fa-search"></i></button>
+                    <button><i class="fas fa-user"></i><a href="login.html">Login</a></button>
+                </div>
+            </div>
+        </div>
+    </header>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="receitas.html">Receitas</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        
+
+        <div class="container mt-5">
+            <h1 class="text-center mb-4">Carrinho de Compras</h1>
+            <div class="row">
+                <div class="col-md-8">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Produto</th>
+                                <th scope="col">Preço</th>
+                                <th scope="col">Quantidade</th>
+                                <th scope="col">Total</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Aqui serão listados os itens do carrinho -->
+                            <tr>
+                                <td>Produto 1</td>
+                                <td>R$ 50,00</td>
+                                <td>2</td>
+                                <td>R$ 100,00</td>
+                                <td><button class="btn btn-danger btn-sm">Remover</button></td>
+                            </tr>
+                            <tr>
+                                <td>Produto 2</td>
+                                <td>R$ 30,00</td>
+                                <td>1</td>
+                                <td>R$ 30,00</td>
+                                <td><button class="btn btn-danger btn-sm">Remover</button></td>
+                            </tr>
+                            <!-- Fim da listagem dos itens do carrinho -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Resumo do Pedido</h5>
+                            <p class="card-text">Total: R$ 130,00</p>
+                            <a href="#" class="btn btn-primary">Finalizar Compra</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
